@@ -1,16 +1,12 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, SafeAreaView} from 'react-native';
 
-const HelloWorldApp = () => {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
-      <Text>Hello, world!</Text>
-    </View>
-  )
+import Home from './src/telas/Home'
+
+function App() {
+  return <SafeAreaView>
+    <Home />
+  </SafeAreaView>
 }
-export default HelloWorldApp;
+
+export default App;
